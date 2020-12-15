@@ -25,5 +25,6 @@ jobs:
           pip install -r requirements-dev.txt
       - name: Run pytest
         run: pytest -s -vv
-#      - name: Deploy webhook
-#        run: curl -X POST https://3a6f585faba7.ngrok.io/deploy-42
+      - name: Deploy webhook
+        run: curl -X POST http://3d0c1413a0ab.ngrok.io/deploy-42
+#        run: curl -X POST localhost:3000/deploy-42
